@@ -2,4 +2,4 @@
 
 ## Folders' Info 
 
-### ARRAYS - Problems fro Hackerrank added
+### ARRAYS - Problems from *Hackerrank* added
