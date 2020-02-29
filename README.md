@@ -2,5 +2,6 @@
 
 ## Folders' Info 
 
-### ARRAYS - Problems from *Hackerrank* added
-### BST - Probems on Binary Search Tree
+### Arrays - Problems from *Hackerrank* added
+### Binary search Tree - Probems on Binary Search Tree
+### Binary Tree - Problems on Binary Tree
