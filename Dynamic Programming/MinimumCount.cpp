@@ -1,15 +1,17 @@
+#include<iostream>
+#include<cmath>
+#include<climits>
+using namespace std;
+
 /*
 
 Given an integer N, find and return the count of minimum numbers, sum of whose squares is equal to N.
 That is, if N is 4, then we can represent it as : {1^2 + 1^2 + 1^2 + 1^2} and {2^2}. 
 Output will be 1, as 1 is the minimum count of numbers required.
 
-*/
 
-#include<iostream>
-#include<cmath>
-#include<climits>
-using namespace std;
+
+
 
 
 // 1. Brute Force
@@ -68,6 +70,9 @@ int minCount(int n){
         ans[i] =  -1;
     return minCount(n,ans);
 }
+
+*/
+
 
 // 3. Dynamic Programming
 
