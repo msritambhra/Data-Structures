@@ -58,6 +58,13 @@ int main() {
         if(!visited[i])
             print_BFS(edges,V,i,visited);
     }
+
+    delete [] visited;
+    
+    for(int i =0; i<V; i++)
+        delete [] edges[i];
+    
+    delete [] edges;
     
   return 0;
 }

@@ -42,5 +42,13 @@ int main() {
         visited[i] = false;
     
     print_DFS(edges,V,0,visited);
-  return 0;
+
+    delete [] visited;
+    
+    for(int i =0; i<V; i++)
+        delete [] edges[i];
+    
+    delete [] edges;
+
+    return 0;
 }
