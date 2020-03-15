@@ -1,3 +1,17 @@
+/*
+
+Given a NxM matrix containing Uppercase English Alphabets only. 
+Your task is to tell if there is a path in the given matrix which makes the sentence “CORONAVIRUS” .
+There is a path from any cell to all its neighbouring cells. A neighbour may share an edge or a corner.
+
+Input Format :
+Line 1 : Two space separated integers N  and M, where N is number of rows and M is number of columns in the matrix.
+Next N lines : N rows of the matrix. First line of these N line will contain 0th row of matrix, second line will contain 1st row and so on
+
+*/
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define MAXN 102
