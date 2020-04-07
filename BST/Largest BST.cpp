@@ -160,8 +160,6 @@ BinaryTreeNode<int>* takeInput() {
 
 int main() {
     BinaryTreeNode<int>* root = takeInput();
-    int a, b;
-    cin >> a >> b;
-    cout << lcaInBST(root, a, b);
+    cout << largestBSTSubtree(root);
     delete root;
 }
