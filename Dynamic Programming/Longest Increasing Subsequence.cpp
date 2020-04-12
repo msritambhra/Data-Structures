@@ -30,34 +30,36 @@ int lis(int arr[], int n) {
 
 int lis(int arr[], int n) {
 	
-    if(n==0||n==1)
-        return n;
+    
     int * output = new int[n];
     
-    int maxLength = 1;
+
 	output[0] = 1;
-    
-    for(int i = 0 ; i < n ; i++){
-        output[i] = 1;
+    int ans = 1;
+    for(int i = 1 ; i < n ; i++){
+        
+        int max = 1;
         
         for(int j = i-1; j>=0; j--){
-            if(arr[j]>arr[i])
-                continue;
-            int possibleAns = 1 + output[j];
-            if(possibleAns > output[i])
-                output[i] = possibleAns;
+            
+            if(arr[j]<arr[i]){
+                int op = output[j] + 1;
+                if(op>max)
+                    max = op;   
+            }
+            
+        }   
         
-        }
-        
-        if(output[i]>maxLength)
-            maxLength = output[i];
+        output[i] = max;
+        if(max > ans)
+            ans = max;
     }
+    
     
     delete [] output;
     
-    return maxLength;
+    return ans;
 }
-
 
 int main(){
     int n;
