@@ -9,7 +9,7 @@ class Edge{
     	int weight;
 };
 
-bool comapre(Edge e1, Edge e2){
+bool compare(Edge e1, Edge e2){
     return e1.weight < e2.weight;
 }
 
@@ -23,7 +23,7 @@ int find_parent(int vertex, int *parent){
 
 void krushkal(Edge *input, int V, int E){
     
-    sort(input,input+E,comapre);
+    sort(input,input+E,compare);
     
     Edge * output = new Edge[V-1];
     
