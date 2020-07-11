@@ -3,7 +3,7 @@ using namespace std;
 #include <queue>
 
 void kSortedArray(int input[], int n, int k) {
-	priority_queue<int> pq;
+	priority_queue<int, vector<int>,greater<int>> pq;
 	for(int i = 0; i < k; i++) {
 		pq.push(input[i]);
 	}
@@ -20,6 +20,7 @@ void kSortedArray(int input[], int n, int k) {
 	while(!pq.empty()) {
 		input[j] = pq.top();
 		pq.pop();
+		j++;
 	}
 
 }
